@@ -6,18 +6,25 @@ public class MadlibsOfTheAmazon {
 	
 	public static void main(String[] args) {
 		// Put this sentence in a pop up:
+		JOptionPane.showMessageDialog(null, "If you find yourself having to cross a piranha-infested river, here's how to do it...");
 		// If you find yourself having to cross a piranha-infested river, here's how to do it...
-		
+
 		// Get the user to enter an adjective
-
+		String adjective = JOptionPane.showInputDialog("enter an adjective");
 		// Get the user to enter a type of liquid
-
+		String liquid = JOptionPane.showInputDialog("enter a type of liquid");
 		// Get the user to enter a body part
-
+		String bodypart = JOptionPane.showInputDialog("enter a body type");
 		// Get the user to enter a verb
-
+		String verb = JOptionPane.showInputDialog("enter a verb");
 		// Get the user to enter a place
-
+		String place = JOptionPane.showInputDialog("enter a place");
+		JOptionPane.showMessageDialog(null, "\n" + 
+				"		Piranhas are more "+adjective+" during the day, so cross the river at\n" + 
+				"		 night. Piranhas are attracted to fresh"+liquid+"  and will most\n" + 
+				"		likely take a bite out of your "+bodypart+" if you "+verb+". Whatever\n" + 
+				"		you do, if you have an open wound, try to find another way to get\n" + 
+				"		back to the "+place+". Good luck!");
 		// Fit the user's words into this sentence, and save it in a String:
 		// Piranhas are more [adjective] during the day, so cross the river at
 		// night. Piranhas are attracted to fresh [type of liquid] and will most
